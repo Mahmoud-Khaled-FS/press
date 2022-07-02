@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #2a2a2a;
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+.conatiner {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.center {
+  max-width: 40%;
+  margin-top: 20vh;
+}
+.press button {
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: solid 1px;
+  height: 25vw;
+  width: 25vw;
+  min-width: 160px;
+  min-height: 160px;
+  border-radius: 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.green {
+  color: var(--color);
+  text-shadow: var(--color) 1px 0 10px;
+  border-color: var(--color);
+}
+.press span {
+  font-size: 45px;
+}
+.score {
+  margin-bottom: 40px;
+  color: white;
+}
+.total_score h2 {
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 10px;
+}
+.total_score strong,
+.my_score strong {
+  font-weight: 700;
+}
+.my_score h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--color);
+  padding-bottom: 6px;
+}
+@media (max-width: 900px) {
+  .press span {
+    font-size: 30px;
+  }
+}
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.button {
+  position: relative;
+}
+.plus_animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* transition: 0.3s; */
+}
+.disable {
+  display: none;
+}
